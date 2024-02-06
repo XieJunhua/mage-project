@@ -23,7 +23,7 @@ services:
       - ~/Documents/secrets/personal-gcp.json:/home/src/personal-gcp.json
     restart: on-failure:5
   postgres:
-    image: postgres:14
+    image: postgres:13
     restart: on-failure
     container_name: ${PROJECT_NAME}-postgres
     env_file:
